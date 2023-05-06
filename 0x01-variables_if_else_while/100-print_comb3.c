@@ -1,20 +1,26 @@
 #include <stdio.h>
 
 /**
-* main - prints all possible combinations of single-digit numbers
-* Return: Always 0 (Success)
+* main - prints all possible different combinations of two digits
+* Return: 0 (Success)
 */
 int main(void)
 {
-int n;
-
-for (n = 48; n < 58; n++)
+int x, y;
+for (x = 48; x <= 56; x++)
 {
-putchar(n);
-if (n != 57)
+for (y = 49; y <= 57; y++)
+{
+if (y > x)
+{
+putchar(x);
+putchar(y);
+if (x != 56 || y != 57)
 {
 putchar(',');
 putchar(' ');
+}
+}
 }
 }
 putchar('\n');
