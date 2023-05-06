@@ -14,7 +14,7 @@ int o;
 
 while (s[counter] != '\0')
 counter++;
-for (o = 0; i < counter; o++)
+for (o = 0; o < counter; o++)
 {
 counter--;
 rev = s[o];
