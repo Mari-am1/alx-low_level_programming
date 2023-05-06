@@ -15,5 +15,5 @@ st++;
 
 s++;
 }
-return (longi);
+return (st);
 }
