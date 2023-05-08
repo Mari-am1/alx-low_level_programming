@@ -22,3 +22,4 @@ for (m = 0; m < size; m++)
 o += a[m];
 a -= size;
 }
+}
