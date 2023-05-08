@@ -22,6 +22,6 @@ for (m = 0; m < size; m++)
 o += a[m];
 a -= size;
 }
-printf("%d, %d\n", sum1, sum2);
+printf("%d, %d\n", x, o);
 }
 
