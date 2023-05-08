@@ -7,18 +7,14 @@
 * Return: If c is found - a pointer to the first occurence.
 * If c is not found - NULL.
 */
+
 char *_strchr(char *s, char c)
 {
-	int o;
-	
-	for (o = 0; s[o] >= '\0'; o++)
+int w;
+for (w = 0; s[w] >= '\0'; w++)
 {
-	if (s[o] == c)
-
-return (s + c);
-
+if (s[w] == c)
+return (s + w);
 }
-
 return ('\0');
-
 }
