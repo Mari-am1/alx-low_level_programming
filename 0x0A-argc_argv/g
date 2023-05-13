@@ -1,0 +1,5 @@
+#!/bin/bash
+
+git add .
+git commit -m 'it is not hurt as it was'
+git push
