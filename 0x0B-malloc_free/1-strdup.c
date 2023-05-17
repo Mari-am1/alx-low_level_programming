@@ -27,6 +27,6 @@ return (NULL);
 
 for (o = 0; str[o]; o++)
 
-aaa[o] = str[r];
+aaa[o] = str[o];
 return (aaa);
 }
