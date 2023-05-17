@@ -8,29 +8,28 @@
 */
 int _atoi(char *s)
 {
-int m, h, j, n, f, d;
-
+int m, h, n, len, f, digit;
 m = 0;
 h = 0;
-j = 0;
 n = 0;
+len = 0;
 f = 0;
-d = 0;
+digit = 0;
 
-while (s[n] != '\0')
-n++;
+while (s[len] != '\0')
+len++;
 
-while (m < n && f == 0)
+while (m < len && f == 0)
 {
 if (s[m] == '-')
 ++h;
 
 if (s[m] >= '0' && s[m] <= '9')
 {
-d = s[m] - '0';
+digit = s[m] - '0';
 if (h % 2)
-d = -d;
-j = j * 10 + d;
+digit = -digit;
+n = n * 10 + digit;
 f = 1;
 if (s[m + 1] < '0' || s[m + 1] > '9')
 break;
