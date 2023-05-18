@@ -22,6 +22,6 @@ if (ptr == NULL)
 return (NULL);
 
 for (o = 0; min <= max; o++)
-ptr[i] = min++;
+ptr[o] = min++;
 return (ptr);
 }
