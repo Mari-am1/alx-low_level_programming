@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main(void)
 {
-int x = 97;
-while (x < 123)
+int x = 96;
+while (x < 122)
 {
 ++x;
 putchar(x);
