@@ -1,4 +1,4 @@
 #!/bin/bash
-git add .
-git commit -m 'm'
+
+git commit -m 'i forget my memories'
 git push
