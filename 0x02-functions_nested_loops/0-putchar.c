@@ -1,6 +1,6 @@
 #include "main.h"
-
-void main(void)
+#include <stdio.h>
+int main(void)
 {
 putchar('_');
 putchar('p');
