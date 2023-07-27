@@ -14,8 +14,7 @@ return (0);
 }
 void print_alphabet(void)
 {
-int x;
-for (x = 97; x < 123; x++)
+for (int x = 97; x < 123; x++)
 putchar(x);
 putchar('\n');
 }
