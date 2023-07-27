@@ -1,0 +1,5 @@
+#!/bin/bash
+
+git add .
+git commit -m 'i wanna be better than yesterday'
+git push
