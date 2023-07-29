@@ -19,6 +19,7 @@ _putchar(':');
 if (m < 10)
 _putchar('0');
 _putchar(m + '0');
+_putchar('\n');
 m++;
 } while (m < 60);
 h++;
