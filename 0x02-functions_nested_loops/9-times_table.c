@@ -7,7 +7,9 @@
 
 void times_table(void)
 {
-int y, x, z = 0;
+int y = 0;
+int x = 0;
+int z = 0;
 while (y < 10)
 {
 do {
@@ -16,10 +18,14 @@ if (z < 10)
 {
 _putchar(' ');
 _putchar(' ');
+_putchar(z + '0');
 }
 else
+{
 _putchar(' ');
-_putchar(z + '0');
+_putchar((z / 10) + '0');
+_putchar((z % 10) + '0');
+}
 if (x < 9)
 {
 _putchar(',');
