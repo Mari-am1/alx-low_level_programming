@@ -12,9 +12,19 @@ while (y < 10)
 {
 do {
 z = x * y;
+if (z < 10)
+{
+_putchar(' ');
+_putchar(' ');
+}
+else
+_putchar(' ');
 _putchar(z);
+if (x < 9)
+{
 _putchar(',');
 _putchar(' ');
+}
 x++;
 } while (x != 10);
 _putchar('\n');
