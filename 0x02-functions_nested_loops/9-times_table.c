@@ -19,7 +19,7 @@ _putchar(' ');
 }
 else
 _putchar(' ');
-_putchar(z);
+_putchar(z + '0');
 if (x < 9)
 {
 _putchar(',');

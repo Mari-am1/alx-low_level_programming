@@ -13,12 +13,26 @@ while (h < 24)
 {
 do {
 if (h < 10)
-_putchar('0');
+{
+_putchar((h % 10) + '0');
 _putchar(h + '0');
+}
+else
+{
+_putchar((h / 10) + '0');
+_putchar((h % 10) + '0');
+}
 _putchar(':');
 if (m < 10)
-_putchar('0');
-_putchar(m + '0');
+{
+_putchar((h % 10) + '0');
+_putchar(h + '0');
+}
+else
+{
+_putchar((h / 10) + '0');
+_putchar((h % 10) + '0');
+}
 _putchar('\n');
 m++;
 } while (m < 60);
