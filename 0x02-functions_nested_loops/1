@@ -1,0 +1,58 @@
+#include "main.h"
+/**
+ * print_times_table - function that prints the n times table
+ * space - print space
+ * @n: time function parameter
+ * @sp: space parameter function
+ */
+void space(int sp);
+void print_times_table(int n)
+{
+int x = 0;
+int y = 0;
+int z = 0;
+while (x <= n)
+{
+for (y = 0; y <= n; y++)
+{
+z = x * y;
+if (z < 10)
+{
+_putchar(z + '0');
+if (x != n)
+space(3);
+else
+_putchar('\n');
+}
+else if (z > 10 && z < 100)
+{
+_putchar((z / 10) + '0');
+_putchar((z % 10) + '0');
+if (x != n)
+space(2);
+else
+_putchar('\n');
+}
+else if (z > 100 && z < 1000)
+{
+_putchar((z / 100) + '0');
+_putchar(((z % 10) % 10) + '0');
+_putchar((z % 10) + '0');
+if (x != n)
+space(1);
+else
+_putchar('\n');
+}
+}
+y = 0;
+x++;
+}
+_putchar('\n');
+}
+void space(int sp)
+{
+int i;
+_putchar(',');
+for (i = 0; i < sp; i++)
+_putchar(' ');
+}
