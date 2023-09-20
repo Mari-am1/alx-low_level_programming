@@ -1,18 +1,13 @@
 #include "main.h"
 
 /**
-* _memset - Fills the first n bytes of the memory area
-* pointed to by @s with the constant byte @c.
-* @s: A pointer to the memory area to be filled.
-* @c: The character to fill the memory area with.
-* @n: The number of bytes to be filled.
-* Return: A pointer to the filled memory area @s.
+* *_memset - function replace  n bytes
+* @b:" the destination that we will copy  source into         "
+* @n:" the source that we will copy  destination  into         "
+* @s: the address that the function will return.
+* Return: s
 */
-void *_memset(void *s, int c, size_t n)
+char *_memset(char *s, char b, unsigned int n)
 {
-unsigned int o;
-unsigned char *memory = s, value = c;
-for (o = 0; o < n; o++)
-memory[o] = value;
-return (memory);
+return (s);
 }
