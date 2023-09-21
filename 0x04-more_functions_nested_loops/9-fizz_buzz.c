@@ -1,22 +1,40 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
- * main - print numbers by trick way
- *
- */
-void main(void)
+* main - prints the numbers from 1 to 100, followed by a new line
+* but for multiples of three prints Fizz instead of the number
+* and for the multiples of five prints Buzz
+* Return: Always 0 (Success)
+*/
+int main(void)
 {
-int x;
-for (x = 1; x <= 100; x++)
+int o;
+
+for (o = 1; o <= 100; o++)
 {
-if (((x % 3) == 0) && ((x % 5) == 0))
-printf("FizzBuzz ");
-else if ((x % 3) == 0)
-printf("Fizz ");
-else if ((x % 5) == 0)
-printf("Buzz ");
+if (o % 3 == 0 && o % 5 != 0)
+{
+printf(" Fizz");
+}
+else if (o % 5 == 0 && o % 3 != 0)
+{
+printf(" Buzz");
+}
+else if (o % 3 == 0 && o % 5 == 0)
+{
+printf(" FizzBuzz");
+}
+else if (o == 1)
+{
+printf("%d", o);
+}
+
 else
-printf("%d ", x);
+{
+printf(" %d", o);
+}
 }
 printf("\n");
+return (0);
 }

@@ -1,12 +1,16 @@
 #include <stdio.h>
+
+/**
+* main - prints all possible combinations of single-digit numbers
+* Return: 0 (Success)
+*/
 int main(void)
 {
-int n = 0;
-while (n < 10)
+int x;
+for (x = 48; x < 58; x++)
 {
-putchar(n + '0');
-n++;
-if (n <= 9)
+putchar(x);
+if (x != 57)
 {
 putchar(',');
 putchar(' ');

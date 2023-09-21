@@ -1,11 +1,17 @@
 #include <stdio.h>
+
+/**
+* main - Prints numbers from 0 to 9.
+*
+* Return: 0 (Success)
+*/
 int main(void)
 {
-int n = 0;
-while (n < 10)
+int x;
+
+for (x = 48; x < 58; x++)
 {
-putchar(n + '0');
-n++;
+putchar(x);
 }
 putchar('\n');
 return (0);

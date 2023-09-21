@@ -1,17 +1,17 @@
 #include <stdio.h>
+
+/**
+* main - Prints the alphabet.
+*
+* Return: 0 (Success)
+*/
 int main(void)
 {
-int x = 96;
-int n = 64;
-while (x < 122)
+char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+int i;
+for (i = 0; i < 52; i++)
 {
-++x;
-putchar(x);
-}
-while (n < 90)
-{
-++n;
-putchar(n);
+putchar(alp[i]);
 }
 putchar('\n');
 return (0);

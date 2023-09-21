@@ -1,11 +1,17 @@
 #include <stdio.h>
+
+/**
+* main - prints the lowercase alphabet in reverse,
+* followed by a new line
+* Return: 0 (Success)
+*/
 int main(void)
 {
-int alp = 122;
-while (alp != 96)
+char ch;
+
+for (ch = 'z'; ch >= 'a'; ch--)
 {
-putchar(alp);
-alp--;
+putchar(ch);
 }
 putchar('\n');
 return (0);

@@ -1,15 +1,19 @@
 #include "main.h"
+
 /**
- * print_most_numbers - function that print the most of the numbers
- *
- */
+* print_most_numbers - print num except 2 and 4
+*
+* return: void
+*/
+
 void print_most_numbers(void)
 {
-int x;
-for (x = 0; x <= 9; x++)
+char e;
+
+for (e = '0'; e <= '9'; e++)
 {
-if (x < 2 || x == 3 || x > 4)
-_putchar(x + '0');
+if (!(e == '2' || e == '4'))
+_putchar(e);
 }
 _putchar('\n');
 }

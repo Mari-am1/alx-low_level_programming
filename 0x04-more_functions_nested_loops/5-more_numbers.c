@@ -1,19 +1,25 @@
 #include "main.h"
+
 /**
- * more_numbers - function print from 1 to 14 ten times
- *
- */
+* more_numbers - print more numbers
+*/
+
 void more_numbers(void)
 {
-int x, y;
-for (x = 0; x < 10; x++)
+int x, o;
+
+for (x = 1; x <= 10; x++)
 {
-for (y = 0; y < 15; y++)
+for (o = 0; o <= 14; o++)
+
+
 {
-if (y > 9)
-_putchar((y / 10) + '0');
-_putchar((y % 10) + '0');
+if (o >= 10)
+_putchar('1');
+_putchar (o % 10 + '0');
 }
+
+
 _putchar('\n');
 }
 }
