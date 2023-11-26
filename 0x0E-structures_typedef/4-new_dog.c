@@ -16,7 +16,7 @@ dog_t *ptr = (dog_t *)malloc(sizeof(dog_t));
 if (ptr == 0)
 return ('\0');
 len = length(name);
-ptr->name = (char *)malloc(sizeof(len));
+ptr->name = (char *)malloc(sizeof(char) * len);
 if (ptr->name == 0)
 {
 free(ptr->name);
@@ -24,7 +24,7 @@ return ('\0');
 }
 _strcpy(ptr->name, name);
 len = length(owner);
-ptr->owner = (char *)malloc(sizeof(len));
+ptr->owner = (char *)malloc(sizeof(char) * len);
 if (ptr->owner == 0)
 {
 free(ptr->name);
